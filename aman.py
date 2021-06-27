@@ -46,7 +46,7 @@ def myCommand():
         r.pause_threshold =  1
         audio = r.listen(source)
     try:
-        query = r.recognize_google(audio, language='en-in')
+        query = r.recognize_google(audio, language='en-persian')
         print('User: ' + query + '\n')
         
     except sr.UnknownValueError:
